@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap");
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+}
+
+.main {
+	height: 100vh;
+	width: 100%;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.sky {
+	height: 100%;
+	width: 100%;
+	background: #e4f3ff;
+}
+
+.snow {
+	height: fit-content;
+	width: 100%;
+	background: white;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.snow_controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	position: relative;
+	font-family: "Snowburst One", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	color: #80c8ff;
+	font-size: 1.5rem;
+}
+
+input {
+	accent-color: #80c8ff;
+	scale: 1.2;
+}
+
+.title {
+	font-family: "Snowburst One", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	color: #80c8ff;
+	font-size: 2rem;
+}
+
+.snow_top {
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	height: 12rem;
+}
